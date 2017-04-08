@@ -2,7 +2,7 @@
 
 require 'app/bootstrap.php';
 
-$auth = new \App\Auth\Social\GitHub($client);
+$auth = new \App\Auth\Social\Facebook($client);
 
 if (!isset($_GET['code'])) {
     echo 'Ivalid code';

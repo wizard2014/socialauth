@@ -48,8 +48,8 @@ class GitHub extends Service
     protected function normalizeUser($user)
     {
         return (object) [
-            'id' => $user->id,
-            'name' => $user->name,
+            'id'    => $user->id,
+            'name'  => $user->name,
             'email' => $user->email,
             'photo' => $user->avatar_url,
         ];
